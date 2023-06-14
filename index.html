@@ -1,0 +1,212 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbook</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- font-awesome library  -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+  <body class="bg-gray">
+    <!-- login -->
+    <div class="container d-flex flex-column flex-lg-row justify-content-evenly mt-5 pt-5">
+      <!-- heading -->
+      <div class="text-center text-lg-start mt-lg-5 pt-lg-5">
+        <h1 class="text-primary fw-bold fs-0">flexbook</h1>
+        <p class="w-75 mx-auto mx-lg-0 fs-4">
+          Flexbook helps you connect and share with people in your life.
+        </p>
+      </div>
+      <!-- form -->
+      <div style="max-width: 28rem; width: 100%" class="mx-auto">
+        <div class="bg-white shadow rounded p-3 input-group-lg">
+          <input type="email" class="form-control my-3" placeholder="Email address or phone number">
+          <input type="password" class="form-control my-3" placeholder="Password">
+          <a href="./home.html">
+            <button class="btn btn-primary w-100 my-3">
+              Log In
+            </button>
+          </a>
+          <a href="#" class="text-decoration-none text-center">
+            <p>Forgetten Password?</p>
+          </a>
+          <!-- create a form -->
+          <hr>
+          <!-- create a model -->
+          <!-- Button trigger modal -->
+          <div class="text-center my-4">
+            <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#createModal">
+              Create New Account
+            </button>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <!-- head -->
+                <div class="modal-header">
+                  <div>
+                    <h2 class="modal-title fs-5" id="createModalLabel">Sign Up</h2>
+                    <p class="text-muted fs-7">It's quick and easy.</p>
+                  </div>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form action="">
+                    <!-- name -->
+                    <div class="row">
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="First name">
+                      </div>
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="Last name">
+                      </div>
+                    </div>
+                    <!-- email & pass -->
+                    <input type="email" class="form-control my-3" placeholder="Mobile number or email address">
+                    <input type="password" class="form-control my-3" placeholder="New password">
+                    <!-- DBth -->
+                    <div class="row my-3">
+                      <span class="text-muted fs-7">
+                        Date Of Birth
+                        <i type="button" class="fa-solid fa-circle-question" data-bs-container="body"
+                          data-bs-toggle="popover" data-bs-placement="right"
+                          data-bs-content="Lorem ipsum dolor sit amet."></i>
+                      </span>
+                      <div class="col">
+                        <select class="form-select">
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+
+                      <div class="col">
+                        <select class="form-select">
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+
+                      <div class="col">
+                        <select class="form-select">
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+
+                    </div>
+                    <!-- gender -->
+                    <div class="row my-3">
+                      <span class="text-muted fs-7">
+                        Gender
+                        <i type="button" class="fa-solid fa-circle-question" data-bs-container="body"
+                          data-bs-toggle="popover" data-bs-placement="right"
+                          data-bs-content="Lorem ipsum dolor sit amet."></i>
+                      </span>
+                      <div class="col">
+                        <div class="border rounded p-2">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            Male
+                          </label>
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"
+                            checked>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="border rounded p-2">
+                          <label class="form-check-label" for="flexRadioDefault2">
+                            Female
+                          </label>
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="border rounded p-2">
+                          <label class="form-check-label" for="flexRadioDefault3">
+                            Custom
+                          </label>
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                        </div>
+                      </div>
+                    </div>
+                    <!-- gender select -->
+                    <div class="d-none" id="genderSelect">
+                      <select class="form-select">
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                      <div class="my-3">
+                        <span class="text-muted fs-7">Your pronoun is visible for everyone.</span>
+                        <input type="text" class="form-control" placeholder="Gender (Optional)">
+                      </div>
+                    </div>
+                    <!-- disclamiter -->
+                    <div>
+                      <span class="text-muted fs-7">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing.
+                      </span>
+                    </div>
+                    <!-- btn -->
+                    <div class="text-center mt-3">
+                      <button type="button" class="btn btn-success btn-lg" data-bs-dismiss="modal">
+                        Sign Up</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end -->
+        </div>
+        <!-- tag -->
+        <div class="my-5 pb-5 text-center">
+          <p class="fw-bold">
+            <a href="#" class="text-decoration-none text-dark">Create a Page </a>
+            <span class="fw-normal">for a celebrity, band or business. </span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="bg-white p-4 text-muted">
+      <div class="container">
+        <!-- language -->
+        <div class="d-flex flex-wrap">
+          <p class="mx-2 fs-7 mb-0">English (US)</p>
+          <p class="mx-2 fs-7 mb-0">English (Uk)</p>
+          <p class="mx-2 fs-7 mb-0">Spanish</p>
+          <p class="mx-2 fs-7 mb-0">French</p>
+          <p class="mx-2 fs-7 mb-0">Arabic</p>
+        </div>
+        <hr>
+        <!-- action -->
+        <div class="d-flex flex-wrap">
+          <p class="mx-2 fs-7 mb-0">Sign Up</p>
+          <p class="mx-2 fs-7 mb-0">Login</p>
+          <p class="mx-2 fs-7 mb-0">Messenger</p>
+          <p class="mx-2 fs-7 mb-0">Flexbook Lite</p>
+          <p class="mx-2 fs-7 mb-0">Watch</p>
+        </div>
+        <!-- copy -->
+        <div class="mt-4 mx-2">
+          <p class="fs-7">Flexbook &copy; 2022</p>
+        </div>
+      </div>
+    </footer>
+    <!-- bootsrap js -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- main js -->
+    <script src="./js/main.js"></script>
+  </body>
+
+</html>
